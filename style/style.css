@@ -1,0 +1,253 @@
+@charset "UTF-8";
+@import url("http://hblee0526.dothome.co.kr/200528/cssReset/reset.css");
+
+/*공통영역*/
+* {
+    padding: 0;
+    margin: 0;
+    color: #333;
+    box-sizing:border-box;
+}
+
+
+/*공통영역*/
+
+/*가이드라인*/
+div#wrap { border: 1px solid #000; }
+
+/*가이드라인*/
+
+
+/*div#wrap*/
+div#wrap {
+    width: 1200px;
+    margin: 10px auto;
+    position: relative;
+
+}
+/*div#wrap*/
+
+/*header#header*/
+header#header {
+    height: 100px;
+    display: flex;
+}
+
+#header #headerLogo {
+    width: 220px;
+    padding-top: 30px;
+    margin-right: 20px;
+}
+#header #gnb {
+    width: 960px;
+
+    position: relative;
+}
+#header #gnb>ul {
+    width: 700px;
+    list-style: none;
+
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+#header #gnb>ul li {
+    float:left;
+}
+#header #gnb ul::after {
+    content:"";
+    clear: both;
+    display: block;
+}
+#header #gnb>ul a {
+    width: 160px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    color: #333;
+    text-align: center;
+    display: inline-block;
+    border: 1px solid #000;
+}
+
+#header #gnb>ul li:not(:first-child)>a {
+    border-left: none;
+}
+
+#header #gnb>ul li a:hover {
+    color: #fff;
+    background-color: #3cb149;
+}
+/*header#header*/
+
+/*nav#sub*/
+nav#sub {
+    width: 100%;
+    height: 130px;
+    background-color: #3cb149;
+
+    position: absolute;
+
+
+}
+
+#sub div#subMenuArea {
+    width: 700px;
+
+    position: absolute;
+    right: 0;
+}
+nav#sub ul.subMenu {
+    display: inline-block;
+    list-style: none;
+    float: left;
+
+}
+
+
+nav#sub ul.subMenu a {
+    width: 160px;
+    font-size: 19px;
+
+    padding: 8px;
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+}
+nav#sub ul.subMenu a:hover {
+    background-color: #fff;
+    color: #333;
+}
+/*nav#sub*/
+
+/*slideshow*/
+div#slideshow {
+    height: 300px;
+    overflow:hidden;
+}
+/*slideshow*/
+
+/*main#main*/
+main#main {
+    width: 100%;
+    height: 200px;
+    display: flex;
+}
+
+#main div#notice,
+#main div#gallery,
+#main div#banner {
+    flex: 1;
+}
+
+#main div#notice {
+
+    padding-top: 10px;
+}
+
+#main div#notice button {
+    padding: 4px 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    left: 50px;
+    top: 1px;
+}
+
+#main div#notice table {
+    width: 360px;
+    margin-left: 20px;
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+}
+
+#main div#notice tr,
+#main div#notice td {
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+#main div#gallery {
+
+    padding-top: 10px;
+}
+
+#main div#gallery button {
+    padding: 4px 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    left: 50px;
+    top: 1px;
+}
+
+div#gallery div#galleryImg {
+    border: 1px solid #ccc;
+    width: 360px;
+    height: 130px;
+    padding-top: 25px;
+    margin-left: 20px;
+    text-align: center;
+}
+
+
+#main div#banner {
+
+    text-align: center;
+    padding-top: 45px;
+}
+
+/*main*/
+
+/*footer*/
+footer#footer {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    border-top: 1px solid #ccc;
+}
+
+footer#footer div#footerLogo {
+    width: 200px;
+    height: 100%;
+    text-align: center;
+    padding-top: 25px;
+
+
+}
+
+footer#footer div#copyright {
+    width: 800px;
+    height: 100%;
+    text-align: center;
+
+    text-align: center;
+    padding-top: 25px;
+    color: #888;
+}
+
+footer#footer div#familysite {
+    width: 200px;
+    height: 100%;
+    padding-top: 30px;
+    text-align: center;
+
+}
+
+footer#footer div#familysite select {
+    width: 140px;
+    height: 30px;
+}
+
+/*main#main*/
+
+/*footer*/
+
+/*footer*/
